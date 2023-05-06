@@ -129,11 +129,12 @@ main {
 @media (max-width: 786px){
     body {
         position: fixed;
+        left: 30px;
     }
     
     
     main {
-        min-width: 100%;
+        min-width: 300px;
         min-height: 100vh;
         display: flex;
         align-items: center;
@@ -141,15 +142,51 @@ main {
     }
     
     .clock {
-        width: 500px;
-        height: 500px;
+        width: 300px;
+        height: 300px;
         background-color: #f0f8ff;
-        border-radius: 600px;
-        border: 15px groove #333;
+        border-radius: 300px;
+        border: 5px groove #333;
         position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+    .number {
+        font-size: 1.rem;
+        font-weight: 300;
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        text-align: center;
+        padding: 10px;
+    }
+    .hour-hand {
+        width: 10px;
+        height: 40%;
+        background-color: #222;
+        position: absolute;
+        border-radius: 5px;
+        transform: translate(0, -50%);
+        transform-origin: bottom center;
+    }
+    .minute-hand {
+        width: 4px;
+        height: 40%;
+        background-color: #333;
+        position: absolute;
+        border-radius: 10px;
+        transform: translate(0, -50%);
+        transform-origin: bottom center;
+    }
+    .second-hand {
+        width: 2px;
+        height:40%;
+        background-color: #a52a2a;
+        position: absolute;
+        border-radius: 5px;
+        transform: translate(0, -50%);
+        transform-origin: bottom center;
     }
 
 }
